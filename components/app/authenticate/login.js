@@ -20,9 +20,9 @@ const LOGIN = gql`
 const Login = ({ onSuccess, classes }) =>
   <Mutation mutation={LOGIN}>
     {(login, { data, error, loading }) => {
-      if (get(data, 'login.token')) 
+      if (get(data, 'login.token'))
         onSuccess(data.login.token)
-      
+
       return (
         <div style={{ width: '100%' }}>
           {error && <Error error={error} />}
@@ -61,10 +61,10 @@ const Login = ({ onSuccess, classes }) =>
                   InputProps={{
                     endAdornment: <div style={{ display: 'flex' }}>
                       <a href="http://localhost:4000/auth/facebook" style={{ marginRight: 10 }} >
-                        <img width="25" src="http://icons.iconarchive.com/icons/iconsmind/outline/256/Facebook-icon.png" />
+                        <img width="20" src="static/images/facebook.svg" />
                       </a>
                       <a href="http://localhost:4000/auth/google" style={{ marginRight: 10 }} >
-                        <img width="25" src="http://icons-for-free.com/free-icons/png/512/1243555.png" />
+                        <img width="20" src="/static/images/google.svg" />
                       </a>
                     </div>
 

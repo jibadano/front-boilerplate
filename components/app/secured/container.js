@@ -8,13 +8,13 @@ import Secured from '.'
 const SESSION = gql`
   query me {
     me {
-      user { _id avatar }
+      user { _id }
     }
   }
 `
 
 export default ({ children, token }) =>
-  <Query query={SESSION} variables={{ token }} >
+  <Query query={SESSION} variables={{ token }} context={{ clientName: "security" }}>
     {({ loading, error, data, refetch }) =>
       <Secured
         loading={loading}

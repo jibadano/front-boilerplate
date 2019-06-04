@@ -5,7 +5,7 @@ class Index extends React.PureComponent {
 
   render() {
     return (
-      <Typography >Boilerplate</Typography>
+      <Typography>Boilerplate</Typography>
     )
   }
 }

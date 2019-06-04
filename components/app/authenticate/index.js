@@ -18,7 +18,6 @@ const styles = theme => ({
     width: '100%',
   },
   leftSection: {
-    backgroundImage: 'url(https://lh3.googleusercontent.com/faXjOL66vNdY6NJRySdzGkmu0sQROm8nR_2eziJ4BI7ED8SBPTRXIwH2nrT892dUzdoLPygULK2oZEKgWhRSzRe6=w1440-h810-p)',
     width: '100%',
     background: theme.palette.primary.main
   },
