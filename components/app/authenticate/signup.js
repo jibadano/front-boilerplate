@@ -30,7 +30,7 @@ const Signup = ({ onSuccess, classes }) =>
       <div style={{ width: '100%' }}>
         <Mutation mutation={SIGNUP}>
           {(signup, { error, data, loading }) => {
-            if (data) onSuccess(data.signup)
+            if (data) onSuccess(data.signup.token)
             return (
               <Formik
                 validateOnChange

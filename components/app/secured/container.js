@@ -14,7 +14,7 @@ const SESSION = gql`
 `
 
 export default ({ children, token }) =>
-  <Query query={SESSION} variables={{ token }} context={{ clientName: "security" }}>
+  <Query query={SESSION} variables={{ token }} context={{ clientName: "secure" }}>
     {({ loading, error, data, refetch }) =>
       <Secured
         loading={loading}
