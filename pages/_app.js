@@ -4,6 +4,7 @@ import { ApolloProvider } from "react-apollo";
 import Layout from "../components/app/layout.js";
 import Secured from "../components/app/secured/bypass"; // use container for security
 import MaterialUI from "../lib/material";
+
 class MyApp extends App {
   render() {
     const { Component, pageProps, apolloClient, router } = this.props;
