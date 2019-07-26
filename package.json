@@ -1,6 +1,10 @@
 {
   "name": "web",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jibadano/web.git"
+  },
   "scripts": {
     "dev": "next",
     "update-next": "next update",
