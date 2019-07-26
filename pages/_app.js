@@ -1,15 +1,12 @@
-
-import App, { Container } from 'next/app'
-import withApolloClient from '../lib/apollo'
-import { ApolloProvider } from 'react-apollo'
-import Layout from '../components/app/layout.js'
-import Secured from '../components/app/secured/container'
-import MaterialUI from '../lib/material'
-
+import App, { Container } from "next/app";
+import withApolloClient from "../lib/apollo";
+import { ApolloProvider } from "react-apollo";
+import Layout from "../components/app/layout.js";
+import Secured from "../components/app/secured/bypass"; // use container for security
+import MaterialUI from "../lib/material";
 class MyApp extends App {
-
   render() {
-    const { Component, pageProps, apolloClient, router } = this.props
+    const { Component, pageProps, apolloClient, router } = this.props;
     return (
       <Container>
         <ApolloProvider client={apolloClient}>
@@ -22,13 +19,15 @@ class MyApp extends App {
           </MaterialUI>
         </ApolloProvider>
         <style jsx global>
-          {`body {
+          {`
+            body {
               margin: 0;
-            }`}
+            }
+          `}
         </style>
-      </Container >
-    )
+      </Container>
+    );
   }
 }
 
-export default withApolloClient(MyApp)
+export default withApolloClient(MyApp);
