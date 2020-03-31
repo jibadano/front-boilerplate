@@ -24,7 +24,7 @@
     "isomorphic-unfetch": "2.0.0",
     "jss": "^9.8.1",
     "mongoose": "^5.1.4",
-    "next": "^9.0.2",
+    "next": "^9.3.2",
     "react": "^16.7.0",
     "react-apollo": "^2.4.1",
     "react-dom": "^16.7.0",
