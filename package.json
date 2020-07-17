@@ -33,6 +33,6 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.19"
   }
 }
